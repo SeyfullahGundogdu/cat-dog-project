@@ -1,5 +1,6 @@
 import React from 'react';
-import './mysass.scss'
+import './mysass.scss';
+import { Helmet } from 'react-helmet';
 
 //generate a unique ID each time the page gets refreshed
 //https://dustinpfister.github.io/2018/10/03/lodash_uniqueid/
@@ -55,7 +56,10 @@ class MyComponent extends React.Component {
 
 		return (
 		<div>
-			<title>Demo Page</title>
+			<Helmet>
+        		<title>Demo Page</title>
+      		</Helmet>
+			
 			<body>
 				<div className="div-img" style={{ backgroundImage: `url(${this.state.src})`}} id={this.idDiv} />
 				<button className="button-props" onClick={this.handleClickDog} style={this.button} id={this.idButtonOne}>
