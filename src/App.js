@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 
 //generate a unique ID each time the page gets refreshed
 //https://dustinpfister.github.io/2018/10/03/lodash_uniqueid/
+const TITLE = 'Demo Page'
 let uniqueId = (function () {
 	let c = 0,
 	st = new Date();
@@ -57,7 +58,7 @@ class MyComponent extends React.Component {
 		return (
 		<div>
 			<Helmet>
-        		<title>Demo Page</title>
+        		<title>{TITLE}</title>
       		</Helmet>
 			
 			<body>
