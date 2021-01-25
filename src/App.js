@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 
 //generate a unique ID each time the page gets refreshed
 //https://dustinpfister.github.io/2018/10/03/lodash_uniqueid/
-document.title = "Demo Page";
 let uniqueId = (function () {
 	let c = 0,
 	st = new Date();
@@ -53,11 +52,14 @@ class MyComponent extends React.Component {
 			}))
 		);
 	}
+	componentDidMount() {
+		document.title = "Demo Page";
+	}
 	render() {
 
 		return (
 		<div>
-			<title>{document.title}</title>
+			
       		<body>
 				<div className="div-img" style={{ backgroundImage: `url(${this.state.src})`}} id={this.idDiv} />
 				<button className="button-props" onClick={this.handleClickDog} style={this.button} id={this.idButtonOne}>
