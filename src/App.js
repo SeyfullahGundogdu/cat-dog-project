@@ -57,9 +57,9 @@ class MyComponent extends React.Component {
 
 		return (
 		<div>
-			<Helmet>
+			
         		<title>{TITLE}</title>
-      		</Helmet>
+      		
 			
 			<body>
 				<div className="div-img" style={{ backgroundImage: `url(${this.state.src})`}} id={this.idDiv} />
