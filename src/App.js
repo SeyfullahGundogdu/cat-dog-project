@@ -59,7 +59,7 @@ class MyComponent extends React.Component {
 
 		return (
 		<div>
-			
+			<title>{document.title}</title>
       		<body>
 				<div className="div-img" style={{ backgroundImage: `url(${this.state.src})`}} id={this.idDiv} />
 				<button className="button-props" onClick={this.handleClickDog} style={this.button} id={this.idButtonOne}>
