@@ -1,6 +1,5 @@
 import React from 'react';
 import './mysass.scss';
-import { Helmet } from 'react-helmet';
 
 //generate a unique ID each time the page gets refreshed
 //https://dustinpfister.github.io/2018/10/03/lodash_uniqueid/
