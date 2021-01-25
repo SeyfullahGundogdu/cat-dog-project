@@ -58,7 +58,7 @@ class MyComponent extends React.Component {
 		return (
 		<div>
 			
-        		<title>{TITLE}</title>
+        		<title>{ TITLE }</title>
       		
 			
 			<body>
