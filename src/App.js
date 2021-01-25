@@ -54,15 +54,18 @@ class MyComponent extends React.Component {
 	render() {
 
 		return (
-		<body>
-			<div className="div-img" style={{ backgroundImage: `url(${this.state.src})`}} id={this.idDiv} />
-			<button className="button-props" onClick={this.handleClickDog} style={this.button} id={this.idButtonOne}>
-			Dog Person {/*id={this.idButtonOne}*/}
-			</button>
-			<button className="button-props" onClick={this.handleClickCat} style={this.button} id={this.idButtonTwo}>
-			Cat Person {/*id={this.idButtonTwo}*/}
-			</button>
-		</body>
+		<div>
+			<title>Demo Page</title>
+			<body>
+				<div className="div-img" style={{ backgroundImage: `url(${this.state.src})`}} id={this.idDiv} />
+				<button className="button-props" onClick={this.handleClickDog} style={this.button} id={this.idButtonOne}>
+				Dog Person {/*id={this.idButtonOne}*/}
+				</button>
+				<button className="button-props" onClick={this.handleClickCat} style={this.button} id={this.idButtonTwo}>
+				Cat Person {/*id={this.idButtonTwo}*/}
+				</button>
+			</body>
+		</div>
 		);
 	}
 };
